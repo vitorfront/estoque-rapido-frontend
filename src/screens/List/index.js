@@ -1,23 +1,52 @@
 import { useState, useEffect } from "react";
 import "./index.css";
-import { getList } from "../../services/request";
-import { ListCard, Loaderr, ListRender, Button } from "../../components";
+import { getList, updateItem } from "../../services/request";
+import { Modal, Loaderr, ListRender, Button } from "../../components";
 
 export const ListScreen = () => {
+  const [modalVisible, setModalVisible] = useState(false);
   const [loading, setLoading] = useState(true);
   const [listData, setListData] = useState([]);
+  const [selectedItem, setselectedIte] = useState(null);
 
   const loadListItems = async () => {
     setLoading(true);
     const result = await getList();
-    console.log(result);
     setListData(result);
     setLoading(false);
+  };
+
+  const onClickAddButton = () => {
+    setModalVisible(true);
+    setselectedIte(null);
+  };
+
+  const onCloseModal = () => {
+    setModalVisible(false);
+    loadListItems();
+    setselectedIte(null);
   };
 
   useEffect(() => {
     loadListItems();
   }, []);
+
+  const onCheckItem = async (item) => {
+    const result = await updateItem(item._id, {
+      name: item.name,
+      quantity: Number(item.quantity),
+      checked: !item.checked,
+    });
+    if (!result.error) {
+      await loadListItems();
+    }
+  };
+
+  const onEditItem = (item) => {
+    setselectedIte(item);
+    setModalVisible(true);
+  };
+
   return (
     <div className="list-screen-container">
       <div className="list-screen-content-container">
@@ -31,13 +60,22 @@ export const ListScreen = () => {
             <h1 className="list-screen-header-title">Lista supermercado</h1>
           </div>
           <div className="list-screen-header-button-container">
-            <Button>Adicionar</Button>
+            <Button onClick={onClickAddButton}>Adicionar</Button>
           </div>
         </div>
         <div className="list-screen-list-container">
-          {loading ? <Loaderr /> : <ListRender list={listData} />}
+          {loading ? (
+            <Loaderr />
+          ) : (
+            <ListRender
+              onEdit={onEditItem}
+              onCheckItem={onCheckItem}
+              list={listData}
+            />
+          )}
         </div>
       </div>
+      {modalVisible && <Modal item={selectedItem} onClose={onCloseModal} />}
     </div>
   );
 };

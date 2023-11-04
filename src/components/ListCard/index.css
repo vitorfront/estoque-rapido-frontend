@@ -3,13 +3,19 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  width: 732px;
+  width: 98%;
   height: 58px;
-  background-color: #7785db;
+  min-height: 58px;
+  padding: 0px 12px;
+  background-color: #abdfae;
   border-radius: 12px;
   margin-bottom: 24px;
-  padding: 0px 12px;
-  cursor: pointer;
+  background-color: #f0f1f6;
+  border: 2px solid #abdfae;
+}
+
+.list-card-container:hover {
+  background-color: #eaf7ea;
 }
 
 .checkbox {
@@ -20,12 +26,12 @@
   height: 24px;
   object-fit: contain;
   cursor: pointer;
-  margin-right: 15px;
+  margin-right: 12px;
 }
 
 .list-card-text-container {
   display: flex;
-  width: 97%;
+  width: 100%;
   flex-direction: column;
 }
 
@@ -38,8 +44,10 @@
 .list-card-subtitle {
   font-size: 14px;
 }
+
 .arrow-icon {
-  width: 6px;
+  width: 12px;
   height: 12px;
   object-fit: contain;
+  cursor: pointer;
 }
