@@ -3,7 +3,7 @@ import { updateItem } from "../../services/request";
 
 export const ListCard = ({ item, onClick, onCheckItem }) => {
   return (
-    <div className="list-card-container" onClick={() => onClick(item)}>
+    <div className="list-card-container">
       <img
         className="checkbox"
         onClick={() => onCheckItem(item)}
@@ -12,9 +12,15 @@ export const ListCard = ({ item, onClick, onCheckItem }) => {
       />
       <div className="list-card-text-container">
         <span className="list-card-title">{item?.name}</span>
-        <span className="list-card-subtitle">{item?.quantity} Unidades</span>
+        <span className="list-card-subtitle">{item?.quantity} Unidades </span>
       </div>
-      <img src="/image/arrow.svg" alt="arrow-icon" className="arrow-icon" />
+      <div className="arrow-icon-container" onClick={() => onClick(item)}>
+        <img
+          src="/image/pencil.png"
+          alt="pencil-icon"
+          className="pencil-icon"
+        />
+      </div>
     </div>
   );
 };
