@@ -57,10 +57,12 @@ export const ListScreen = () => {
               src="/image/supermarket-list-logo.png"
               alt="supermarket-list-logo"
             />
-            <h1 className="list-screen-header-title">Lista supermercado</h1>
+            <h1 className="list-screen-header-title">Lista Supermercado</h1>
           </div>
           <div className="list-screen-header-button-container">
-            <Button onClick={onClickAddButton}>Adicionar</Button>
+            <Button onClick={onClickAddButton}>
+              {window.innerWidth <= 420 ? "+" : "Adicionar"}
+            </Button>
           </div>
         </div>
         <div className="list-screen-list-container">

@@ -53,3 +53,20 @@
   margin-top: 62vh;
   width: 100%;
 }
+
+@media screen and (max-width: 830px) {
+  .modal-content {
+    width: 60vw;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .modal-content {
+    width: 100vw;
+  }
+
+  .buttons-container {
+    height: 18vh;
+    margin-top: 42vh;
+  }
+}
