@@ -78,6 +78,16 @@
   }
 }
 
+@media screen and (max-width: 440px) {
+  .home-screen-content-container {
+    width: 380px;
+  }
+  .home-screen-subtitle-description {
+    width: 350px;
+    font-size: 14px;
+  }
+}
+
 @media screen and (max-width: 830px) {
   .home-screen-container {
     overflow-x: hidden;

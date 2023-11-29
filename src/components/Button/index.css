@@ -36,3 +36,15 @@
   object-fit: contain;
   margin-right: 6px;
 }
+
+@media screen and (max-width: 420px) {
+  .button-container {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .button-container {
+    max-width: 350px;
+  }
+}

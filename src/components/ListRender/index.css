@@ -7,3 +7,9 @@
   padding: 12px;
   overflow-y: scroll;
 }
+
+@media screen and (max-width: 440px) {
+  .list-render-container {
+    width: 78vw;
+  }
+}
