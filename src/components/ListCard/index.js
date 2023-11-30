@@ -1,5 +1,4 @@
-import "./index.css";
-import { updateItem } from "../../services/request";
+import './index.css'
 
 export const ListCard = ({ item, onClick, onCheckItem }) => {
   return (
@@ -7,7 +6,7 @@ export const ListCard = ({ item, onClick, onCheckItem }) => {
       <img
         className="checkbox"
         onClick={() => onCheckItem(item)}
-        src={`/image/${item?.checked ? "checked.svg" : "unchecked.svg"}`}
+        src={`/image/${item?.checked ? 'checked.svg' : 'unchecked.svg'}`}
         alt="checked"
       />
       <div className="list-card-text-container">
@@ -22,5 +21,5 @@ export const ListCard = ({ item, onClick, onCheckItem }) => {
         />
       </div>
     </div>
-  );
-};
+  )
+}
