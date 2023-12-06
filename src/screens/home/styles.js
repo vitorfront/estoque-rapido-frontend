@@ -25,6 +25,10 @@ export const ContentContainer = styled.div`
   background-color: white;
   border-radius: 24px;
 
+  @media (max-width: 450px) {
+    width: 90vw;
+  }
+
   @media (max-width: 420px) {
     max-width: 320px;
     max-height: 600px;

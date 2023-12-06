@@ -1,9 +1,14 @@
 import { useState } from 'react'
-import { Input } from 'components/Input'
-import { Button } from 'components/atoms/Button'
-import './index.css'
-import { Title } from 'components/atoms'
+import { Input } from 'components/molecules'
+import { Title, Button } from 'components/atoms'
 import { createItem, updateItem, deleteItem } from 'services/request'
+import {
+  ModalBackgroundContainer,
+  ModalContentContainer,
+  ModalHeaderContainer,
+  ModalCloseButton,
+  ButtonsContainer
+} from './styles'
 
 export const Modal = ({ onClose, item }) => {
   const [name, setName] = useState('')
@@ -58,12 +63,12 @@ export const Modal = ({ onClose, item }) => {
   }
 
   return (
-    <div className="modal">
-      <div className="modal-content">
-        <div className="modal-header">
+    <ModalBackgroundContainer>
+      <ModalContentContainer>
+        <ModalHeaderContainer>
           <Title>{item ? 'Editar Item' : 'Adicionar novo item'}</Title>
-          <button onClick={onClose} className="modal-close-button"></button>
-        </div>
+          <ModalCloseButton onClick={onClose}></ModalCloseButton>
+        </ModalHeaderContainer>
         <Input
           onChange={(text) => setName(text)}
           value={name}
@@ -76,7 +81,7 @@ export const Modal = ({ onClose, item }) => {
           label="Quantidade"
           type="number"
         />
-        <div className="buttons-container">
+        <ButtonsContainer>
           {item && (
             <Button icon="trash" variant="outline" onClick={callDeleteItem}>
               Deletar item
@@ -86,8 +91,8 @@ export const Modal = ({ onClose, item }) => {
           <Button onClick={item ? callUpdateItem : callAddItem}>
             {item ? 'Atualizar' : 'Adicionar'}
           </Button>
-        </div>
-      </div>
-    </div>
+        </ButtonsContainer>
+      </ModalContentContainer>
+    </ModalBackgroundContainer>
   )
 }

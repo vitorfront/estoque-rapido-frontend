@@ -9,6 +9,10 @@ export const Title = styled.h1`
   line-height: ${({ lineHeight }) => lineHeight || 24}px;
   margin-left: ${({ ml }) => ml || 0}px;
 
+  @media (max-width: 450px) {
+    font-size: 28px;
+  }
+
   @media (max-width: 420px) {
     max-width: 300px;
     font-size: 18px;
@@ -25,11 +29,19 @@ export const Subtitle = styled.h3`
   padding: 0;
   margin-bottom: ${({ mb }) => mb || 48}px;
 
-  @media (max-width: 420px) {
-    h3 {
-      max-width: 300px;
-      font-size: 12px;
-      margin-bottom: ${({ mb }) => mb || 24}px;
-    }
+  @media (max-width: 450px) {
+    max-width: 350px;
   }
+
+  @media (max-width: 420px) {
+    font-size: 14px;
+    max-width: 290px;
+  }
+`
+
+export const SmallText = styled.span`
+  text-align: ${({ align }) => align || 'center'};
+  font-size: ${({ fontSize }) => fontSize || 16}px;
+  margin-bottom: ${({ mb }) => mb || 0}px;
+  font-weight: ${({ fontWeight }) => fontWeight || 500};
 `

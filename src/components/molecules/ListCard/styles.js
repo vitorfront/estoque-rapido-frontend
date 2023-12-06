@@ -1,4 +1,6 @@
-.list-card-container {
+import styled from 'styled-components'
+
+export const CardContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -7,18 +9,22 @@
   height: 58px;
   min-height: 58px;
   padding: 0px 12px;
-  background-color: #abdfae;
+  background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 12px;
   margin-bottom: 24px;
   background-color: #f0f1f6;
   border: 2px solid #abdfae;
-}
 
-.list-card-container:hover {
-  background-color: #eaf7ea;
-}
+  @media (max-width: 440px) {
+    max-width: 300px;
+  }
 
-.checkbox {
+  :hover {
+    background-color: #eaf7ea;
+  }
+`
+
+export const CheckImage = styled.img`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,41 +33,28 @@
   object-fit: contain;
   cursor: pointer;
   margin-right: 12px;
-}
+`
 
-.list-card-text-container {
+export const TextContainer = styled.div`
   display: flex;
   width: 90%;
   flex-direction: column;
-}
+`
 
-.list-card-title {
-  font-size: 16px;
-  font-weight: 500;
-  margin-bottom: 4px;
-}
-
-.list-card-subtitle {
-  font-size: 14px;
-}
-
-.arrow-icon-container {
+export const ArrowContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   justify-content: center;
   cursor: pointer;
   width: 10%;
-}
+`
 
-.arrow-icon {
-  width: 12px;
-  height: 12px;
+export const ArrowIcon = styled.img.attrs({
+  src: '/image/pencil.png',
+  alt: 'pencil-icon'
+})`
+  width: 24px;
+  height: 24px;
   object-fit: contain;
-}
-
-@media screen and (max-width: 440px) {
-  .list-card-container {
-    max-width: 300px;
-  }
-}
+`

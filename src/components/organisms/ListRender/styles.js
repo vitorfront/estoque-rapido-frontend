@@ -1,4 +1,6 @@
-.list-render-container {
+import styled from 'styled-components'
+
+export const ListRenderContainer = styled.div`
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -6,10 +8,8 @@
   width: 60vw;
   padding: 12px;
   overflow-y: scroll;
-}
 
-@media screen and (max-width: 440px) {
-  .list-render-container {
+  @media (max-width: 440px) {
     width: 78vw;
   }
-}
+`

@@ -15,16 +15,16 @@ export const ButtonContainer = styled.button`
   cursor: pointer;
   border: 1px solid ${({ theme }) => theme.colors.primary};
   background-color: ${({ theme, outline }) =>
-    outline ? theme.colors.light : theme.colors.primary};
+    outline ? theme.colors.white : theme.colors.primary};
   color: ${({ theme, outline }) =>
-    outline ? theme.colors.primary : theme.colors.light};
+    outline ? theme.colors.primary : theme.colors.white};
 
-  @media (max-width: 420px) {
-    max-width: 300px;
+  @media (max-width: 450px) {
+    max-width: 355px;
   }
 
-  @media (max-width: 440px) {
-    max-width: 350px;
+  @media (max-width: 420px) {
+    max-width: 330px;
   }
 `
 
