@@ -4,7 +4,7 @@
   align-items: flex-start;
   justify-content: flex-start;
   width: 452px;
-  height: 48px;
+  height: 52px;
   border-radius: 8px;
   border-color: #abdfae;
   border-width: 2px;
@@ -24,7 +24,7 @@
   border: 0px transparent;
   margin-left: 6px;
   font-size: 16px;
-  font-family: "Avenir next";
+  font-family: 'Avenir next';
 }
 
 .input:focus {
