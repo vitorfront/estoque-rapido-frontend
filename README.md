@@ -9,7 +9,7 @@ It was used the Atomic Design Concept to organize the components.
 
 ## Link to Production App:
 
-https://supermarket-list-frontend-three.vercel.app/
+https://esotoque-rapido-frontend-three.vercel.app/
 
 ## Technologies Used
 
