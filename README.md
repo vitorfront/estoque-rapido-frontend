@@ -36,7 +36,7 @@ https://github.com/vitorfront/supermarket-list-frontend.git
 2. Install the dependecies:
 
 ```
-cd supermarket-listweb && npm install
+cd estoque-rapido-frontend && npm install
 ```
 
 3. Run the project:
