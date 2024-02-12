@@ -4,7 +4,7 @@ This is an application build using React.js, with the goal of make easier create
 It was used the Atomic Design Concept to organize the components.
 
 <p> 
-  <img height="500" src="https://github.com/vitorfront/estoque-rapido-frontend/blob/master/public/image/capagit.png"/>
+  <img height="400" src="https://github.com/vitorfront/estoque-rapido-frontend/blob/master/public/image/capagit.png"/>
 </p>
 
 ## Link to Production App:
