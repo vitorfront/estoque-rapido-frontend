@@ -1,4 +1,4 @@
-# Supermarket List App
+# Estoque Rapido App
 
 This is an application build using React.js, with the goal of make easier create supermarket lists.
 It was used the Atomic Design Concept to organize the components.
