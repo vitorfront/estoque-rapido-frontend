@@ -1,4 +1,4 @@
-# Supermarket List App
+# Estoque Rapido App
 
 This is an application build using React.js, with the goal of make easier create supermarket lists.
 It was used the Atomic Design Concept to organize the components.
@@ -9,7 +9,7 @@ It was used the Atomic Design Concept to organize the components.
 
 ## Link to Production App:
 
-https://supermarket-list-frontend-three.vercel.app/
+https://esotoque-rapido-frontend-three.vercel.app/
 
 ## Technologies Used
 
@@ -29,14 +29,14 @@ https://supermarket-list-frontend-three.vercel.app/
 1. Clone the project:
 
 ```
-https://github.com/vitorfront/supermarket-list-frontend.git
+https://github.com/vitorfront/estoque-rapido-frontend.git
 
 ```
 
 2. Install the dependecies:
 
 ```
-cd supermarket-listweb && npm install
+cd estoque-rapido-frontend && npm install
 ```
 
 3. Run the project:
