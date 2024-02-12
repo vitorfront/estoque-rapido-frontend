@@ -7,7 +7,7 @@ export const Button = ({ children, onClick, variant, icon }) => {
         <ButtonIcon
           src={'/image/trash.svg'}
           className="button-icon"
-          alt={`supermarket_icon_${icon}`}
+          alt={`estoque_icon_${icon}`}
         />
       )}
       {children}

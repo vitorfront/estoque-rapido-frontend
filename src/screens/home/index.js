@@ -6,7 +6,8 @@ import {
   ScreenContainer,
   ContentContainer,
   BagImage,
-  ButtonContainer
+  ButtonContainer,
+  BagImagef
 } from './styles'
 
 export const HomeScreen = () => {
@@ -28,12 +29,12 @@ export const HomeScreen = () => {
     <ScreenContainer>
       <ContentContainer>
         <BagImage />
-        <Title>Sua lista de supermercado mais fácil do que nunca</Title>
-        <Subtitle>
-          Ajudamos voçê a organizar sua lista de compras de forma descomplicada.
+        <Title>Seu estoque mais rápido do que nunca</Title>
+        <Subtitle mb={100}>
+          Ajudamos voçê a organizar seu estoque de forma descomplicada.
         </Subtitle>
         <Subtitle mw={452} align="left" mb={10}>
-          Digite abaixo seu usuário para ter acesso a sua lista de compras:
+          Digite abaixo seu usuário para ter acesso a seu estoque rápido:
         </Subtitle>
         <Input
           onChange={(text) => setUsername(text)}
@@ -42,9 +43,10 @@ export const HomeScreen = () => {
           placeholder="Ex: usuario1"
         />
         <ButtonContainer>
-          <Button onClick={onClickcontinue}>Continuar</Button>
+          <Button onClick={onClickcontinue}>Entrar</Button>
         </ButtonContainer>
       </ContentContainer>
+      <BagImagef />
     </ScreenContainer>
   )
 }

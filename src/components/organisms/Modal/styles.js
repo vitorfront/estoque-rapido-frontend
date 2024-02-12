@@ -24,6 +24,7 @@ export const ModalContentContainer = styled.div`
   padding-top: 16px;
   padding-left: 24px;
   padding-right: 24px;
+  border-radius: 24px;
 
   @media (max-width: 830px) {
     width: 60vw;
@@ -48,14 +49,10 @@ export const ModalHeaderContainer = styled.div`
 `
 
 export const ModalCloseButton = styled.button`
-  background-color: black;
   border: 0px;
   height: 24px;
   width: 24px;
-  background-image: url('../../../public/image/close.svg');
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
+  background-image: url('image/close.svg');
   cursor: pointer;
 `
 

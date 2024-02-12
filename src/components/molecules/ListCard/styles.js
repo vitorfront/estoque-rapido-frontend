@@ -13,14 +13,10 @@ export const CardContainer = styled.div`
   border-radius: 12px;
   margin-bottom: 24px;
   background-color: #f0f1f6;
-  border: 2px solid #abdfae;
+  border: 2px solid #deb887;
 
   @media (max-width: 440px) {
     max-width: 300px;
-  }
-
-  :hover {
-    background-color: #eaf7ea;
   }
 `
 
@@ -51,7 +47,7 @@ export const ArrowContainer = styled.div`
 `
 
 export const ArrowIcon = styled.img.attrs({
-  src: '/image/pencil.png',
+  src: '/image/edit.svg',
   alt: 'pencil-icon'
 })`
   width: 24px;

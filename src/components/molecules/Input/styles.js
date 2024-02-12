@@ -22,6 +22,10 @@ export const InputContainer = styled.div`
     width: 350px;
     margin-bottom: 10px;
   }
+
+  @media (max-width: 320px) {
+    width: 90vw;
+  }
 `
 
 export const InputLabel = styled.label`

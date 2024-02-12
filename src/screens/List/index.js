@@ -62,12 +62,12 @@ export const ListScreen = () => {
           <TitleContainer>
             <LogoImage />
             <Title fontSize={32} lineHeight={32} ml={12}>
-              Lista Supermercado
+              Estoque Rápido
             </Title>
           </TitleContainer>
           <HeaderButtonContainer>
             <Button onClick={onClickAddButton}>
-              {window.innerWidth <= 420 ? '+' : 'Adicionar'}
+              {window.innerWidth <= 600 ? '+' : 'Adicionar'}
             </Button>
           </HeaderButtonContainer>
         </HeaderContainer>

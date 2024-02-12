@@ -5,7 +5,7 @@ export const Title = styled.h1`
   font-weight: bold;
   text-align: ${({ align }) => align || 'center'};
   font-size: ${({ fontSize }) => fontSize || 24}px;
-  color: black;
+  color: #deb887;
   line-height: ${({ lineHeight }) => lineHeight || 24}px;
   margin-left: ${({ ml }) => ml || 0}px;
 
@@ -36,6 +36,11 @@ export const Subtitle = styled.h3`
   @media (max-width: 420px) {
     font-size: 14px;
     max-width: 290px;
+  }
+
+  @media (max-width: 320px) {
+    font-size: 12px;
+    width: 90vw;
   }
 `
 

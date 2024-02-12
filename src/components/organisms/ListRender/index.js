@@ -7,8 +7,8 @@ export const ListRender = ({ list, onEdit, onCheckItem }) => {
     return (
       <Subtitle>
         {' '}
-        Sua lista está vazia, clique no botão de "Adicionar" para incluir novos
-        itens{' '}
+        Seu estoque está vazio, clique no botão de "Adicionar" para incluir
+        novos itens{' '}
       </Subtitle>
     )
   }

@@ -5,7 +5,7 @@ export const ScreenContainer = styled.div`
   flex: 1;
   width: 100vw;
   height: 100vh;
-  background-color: #abdfae;
+  background-color: #4f4f4f;
   align-items: center;
   justify-content: center;
 
@@ -15,33 +15,58 @@ export const ScreenContainer = styled.div`
   }
 `
 
+export const BagImagef = styled.img.attrs({
+  src: 'image/imgfundo.png',
+  alt: 'estoque-f'
+})`
+  width: 75vw;
+  height: 100%;
+
+  @media (max-width: 500px) {
+    max-width: 0px;
+  }
+
+  @media (max-width: 1030px) {
+    max-width: 0px;
+  }
+`
+
 export const ContentContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 552px;
-  height: 720px;
+  width: 558px;
+  height: 100vh;
   background-color: white;
   border-radius: 24px;
+
+  @media (max-width: 320px) {
+    width: 100vw;
+  }
 
   @media (max-width: 450px) {
     width: 90vw;
   }
 
-  @media (max-width: 420px) {
-    max-width: 320px;
-    max-height: 600px;
+  @media (max-width: 750px) {
+    width: 100vw;
     padding: 12px;
+  }
+
+  @media (max-width: 1030px) {
+    width: 100vw;
   }
 `
 
 export const BagImage = styled.img.attrs({
-  src: 'image/supermarket-list.png',
-  alt: 'shopping-back'
+  src: 'image/logocerta2.png',
+  alt: 'estoque-back'
 })`
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
+  padding-right: 1px;
+  margin-bottom: 60px;
 
   @media (max-width: 420px) {
     width: 180px;
@@ -54,10 +79,14 @@ export const ButtonContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 452px;
-  margin-top: 24px;
+  margin-top: 100px;
 
   @media (max-width: 420px) {
     max-width: 300px;
     margin-top: 8px;
+  }
+
+  @media (max-width: 320px) {
+    width: 90vw;
   }
 `
