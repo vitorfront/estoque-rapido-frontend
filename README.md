@@ -29,7 +29,7 @@ https://esotoque-rapido-frontend-three.vercel.app/
 1. Clone the project:
 
 ```
-https://github.com/vitorfront/supermarket-list-frontend.git
+https://github.com/vitorfront/estoque-rapido-frontend.git
 
 ```
 
