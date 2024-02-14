@@ -83,7 +83,7 @@ export const Modal = ({ onClose, item }) => {
         />
         <ButtonsContainer>
           {item && (
-            <Button icon="trash" variant="outline" onClick={callDeleteItem}>
+            <Button icon="delete" variant="outline" onClick={callDeleteItem}>
               Deletar item
             </Button>
           )}

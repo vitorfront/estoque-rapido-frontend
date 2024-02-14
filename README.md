@@ -1,7 +1,6 @@
 # Estoque Rapido App
 
-This is an application build using React.js, with the goal of make easier create supermarket lists.
-It was used the Atomic Design Concept to organize the components.
+This is an application built in React.js, with the aim of facilitating the creation of stock lists. The Atomic Design Concept was used to organize the components
 
 <p> 
   <img height="400" src="https://github.com/vitorfront/estoque-rapido-frontend/blob/master/public/image/capagit.png"/>

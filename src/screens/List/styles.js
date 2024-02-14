@@ -47,7 +47,7 @@ export const TitleContainer = styled.div`
 
 export const LogoImage = styled.img.attrs({
   src: '/image/logocerta2.png',
-  alt: 'supermarket-list-logo'
+  alt: 'estoque-rapido-logo'
 })`
   width: 72px;
   height: 72px;
