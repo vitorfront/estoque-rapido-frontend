@@ -3,7 +3,13 @@ module.exports = {
     browser: true,
     es2021: true
   },
-  extends: ['plugin:react/recommended', 'prettier', 'standard'],
+  extends: [
+    'plugin:react/recommended',
+    'prettier',
+    'standard',
+    'Jest',
+    '@babel/preset-react'
+  ],
   overrides: [
     {
       env: {
